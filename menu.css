@@ -1,0 +1,114 @@
+body{
+    /* font-family: 'Source Sans Pro', sans-serif; */
+}
+
+.header{
+    background-image: url('https://cdn.demos.pixelgrade.com/wp-content/uploads/sites/5/2014/05/treat-yo-self34836_words_done.jpg');
+    background-image: linear-gradient(to left, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("https://www.londonplanner.com/media/image/onthedak_main_image.jpg");
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    background-position: center;
+    position: relative;
+}
+
+.header__center{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header__h1{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: .2em;
+}
+
+.intro{
+    padding: 5rem 0;
+}
+
+
+.menu__hr{
+    margin: 3rem 0;
+}
+
+.menu__p{
+    font-size: 14px;
+}
+
+
+
+
+
+.menu__list-title{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border-bottom: 3px dashed var(--color-primary);
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.menu__list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu__item{
+    position: relative;
+    margin-bottom: 1.25rem;
+}
+
+.item__title{
+    background-color: #fff;
+    position: relative;
+    z-index: 100;
+    font-size: 18px;
+    display: inline-block;
+    padding-top: 2px;
+    padding-right: 5px;
+    font-weight: 600;
+}
+
+.item__dots{
+    position: absolute;
+    top: 17px;
+    left: 15px;
+    right: 30px;
+    z-index: 1;
+    margin: 0;
+    border: 0;
+    height: 3px;
+    display: block;
+    background-image: radial-gradient(circle closest-side, currentColor 99%, transparent 1%);
+    background: radial-gradient(circle closest-side,#ccc 90%,#fff 10%);
+    background-position: bottom;
+    background-size: 6px 3px;
+    background-repeat: repeat-x;
+}
+
+.item__price{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    max-width: 96px;
+    background-color: white;
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 1.27316;
+    font-weight: bold;
+    color: var(--color-primary) !important;
+}
+
+.item__desc{
+    font-size: 14px;
+}
+/* 
+.menu__list-p{
+    font-style: italic;
+    font-size: 18px;
+} */

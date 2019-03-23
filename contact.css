@@ -1,0 +1,26 @@
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.header{
+    background-image: linear-gradient(to left, rgba(0, 0, 0, .6), rgba(0, 0, 0, .7)), url('https://st3.depositphotos.com/12985848/18034/i/1600/depositphotos_180341196-stock-photo-top-view-toasts-fried-eggs.jpg');
+    background-position: cover;
+    height: 300px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+
+.submit__btn{
+    background-color: #222;
+    color: #fff;
+    border-radius: 3px;
+    border: 1px solid #222;
+    padding: 6px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+}
