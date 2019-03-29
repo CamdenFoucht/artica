@@ -6,23 +6,6 @@ hamburger.addEventListener('click', function(e){
     sidemenu.classList.toggle('active');
 });
 
-let arr = Array.from(document.querySelectorAll('.form-control'));
-
-let name = document.querySelector('#name');
-let email = document.querySelector('#email');
-let subject = document.querySelector('#subject');
-let message = document.querySelector('#message');
-
-function submitForm(e){
-    alert('hi');
-    console.log(e);
-    for(let i=0; i<arr.length; i++){
-        arr[i].value = "";
-    }
-
-}
-
-
 function scrollTopPage(){
     window.scroll(0, 0);
 }
@@ -31,3 +14,46 @@ function scrollTopPage(){
 function scrollDownPage(){
     window.scroll(0, 600);
 }
+
+
+var smoothScroller = (function() {
+    var scrollY = 0;
+    var distance = 30;
+    var speed = 10;
+
+    var __scrollDown = function(id) {
+        var currentY = window.pageYOffset;
+        var targetY = document.getElementById(id).offsetTop;
+        var bodyHeight = document.body.offsetHeight;
+        var yPos = currentY + window.innerHeight;
+        var scroller = setTimeout(() => __scrollDown(id), speed);
+        if (yPos >= bodyHeight) {
+            clearTimeout(scroller);
+        } else {
+            if (currentY < targetY - distance) {
+                scrollY = currentY + distance;
+                window.scroll(0, scrollY);
+            } else {
+                clearTimeout(scroller);
+            }
+        }
+    }
+
+    var __scrollUp = function(id) {
+        var currentY = window.pageYOffset;
+        var targetY = document.getElementById(id).offsetTop;
+        var scroller = setTimeout(() => __scrollUp(id), speed);
+        if (currentY > targetY) {
+            scrollY = currentY - distance;
+            window.scroll(0, scrollY);
+        } else {
+            clearTimeout(scroller);
+        }
+    }
+
+    return {
+        scrollDown: __scrollDown,
+        scrollUp: __scrollUp
+    }
+
+})();

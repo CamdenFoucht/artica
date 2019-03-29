@@ -11,9 +11,6 @@
             crossorigin="anonymous">
         <link rel="stylesheet" href="./index.css">
         <link
-            href="https://fonts.googleapis.com/css?family=Berkshire+Swash"
-            rel="stylesheet">
-        <link
             href="https://fonts.googleapis.com/css?family=Aguafina+Script"
             rel="stylesheet">
         <link
@@ -25,39 +22,39 @@
         <link
             href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700"
             rel="stylesheet">
-        <title>Reste - Experience Taste</title>
+        <title>Artica - Experience Taste</title>
     </head>
     <body>
-        <header class="header">
             <div class="container-fluid nav__bg">
-                <div class="container">
-                    <nav class="nav">
-                        <h1 class="nav__brand">Reste</h1>
-                        <ul class="nav__list">
-                            <li class="nav__item">
-                                <a class="nav__link active" href="index.html">Home</a>
-                            </li>
-                            <li class="nav__item">
-                                <a class="nav__link" href="menu.html">Menu</a>
-                            </li>
-                            <li class="nav__item">
-                                <a class="nav__link" href="reservation.html">Reservations</a>
-                            </li>
-                            <li class="nav__item">
-                                <a class="nav__link" href="contact.html">Contact</a>
-                            </li>
-                        </ul>
-
-                    </nav>
+                    <div class="container">
+                        <nav class="nav" id="nav">
+                                <a href="./index.html" class="nav__brand">Artica</a>
+                                <ul class="nav__list">
+                                <li class="nav__item">
+                                    <a class="nav__link active" href="index.html">Home</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link" href="menu.html">Menu</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link" href="reservation.html">Reservations</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link" href="contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
-            </div>
+        <header class="header">
             <div class="header__bg"></div>
             <div class="header__center">
                 <hgroup >
                     <h1 class="cursive-font discover__header">
                         <span class="h1__first-letter">W</span>elcome</h1>
+                        <h1 class="cursive-font discover__header" style="font-size: 38px; margin: 10px 0;">to</h1>
                     <h2 class="h2__header text-white">
-                        The Cafe</h2>
+                        Artica</h2>
                 </hgroup>
                 <div class="line__container">
                     <div class="line"></div>
@@ -69,7 +66,7 @@
             </div>
 
             <div class="blurp--top-arrow">
-                <i onclick="scrollDownPage()" class="fas fa-angle-down downarrow"></i>
+                <i onclick="smoothScroller.scrollDown('discoverstory'); return false;" class="fas fa-angle-down downarrow"></i>
             </div>
             <svg
                 fill="#fff"
@@ -92,7 +89,7 @@
 
         </header>
 
-        <section class="discover">
+        <section class="discover" id="discoverstory">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 flex-col">
@@ -102,27 +99,22 @@
                             <h2 class="h2__header">
                                 Our Story</h2>
                         </hgroup>
-                        <p>Reste started as a family looking to create healthy meals that tasted extra-ordinary. Our recipes are homemade and sure to leave you satisifed. We have won several awards for customer satisfcation and health.</p>
+                        <p>Artica started as a family looking to create healthy meals that tasted extra-ordinary. Our recipes are homemade and sure to leave you satisifed. We have won several awards for customer satisfcation and health.</p>
                         <p>
                             <a class="my__link" href="">About Us</a>
                         </p>
 
                     </div>
                     <div class="col-md-3 col-6">
-                        <!--    
-                            http://valeriabismar.com/wp-content/gallery/food-1/IMG_0667.jpg
-                            
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLm1R803Fs2GYkPtQsFP2AIpS7tqyWybxsuWFR6NNqs2Z4vlYZ"
- -->
                         <img
                             class="discover__img"
-                            src="http://libbyvision.com/wp-content/uploads/2017/04/001_food_photographer_south_florida_props_styled_Langoustine-1-2.jpg"
+                            src="./discover-1.jpeg"
                             alt="food"/>
                     </div>
                     <div class="col-md-3 col-6">
                         <img
                             class="discover__img"
-                            src="http://libbyvision.com/wp-content/uploads/2017/04/MIA_LongRibbons-6-of-9.jpg"
+                            src="./discover-2.jpg"
                             alt="food">
                     </div>
                 </div>
@@ -130,55 +122,49 @@
             </div>
         </section>
 
-        <!-- https://www.londonplanner.com/media/image/onthedak_main_image.jpg -->
         <section class="tasteful">
-            <!-- <div class="img__cutter"> -->
-            <!-- <img class="bg__img" src="https://as2.ftcdn.net/jpg/02/05/94/91/500_F_205949100_BqKru5iUWL4n4twzueBb1hjlHsk5EIDG.jpg" alt=""> -->
-            <!-- <img class="bg__img" src="https://www.londonplanner.com/media/image/onthedak_main_image.jpg" alt=""> -->
             <hgroup class="header__center">
                 <h1 class="cursive-font discover__header">
                     <span class="h1__first-letter">T</span>asteful</h1>
                 <h2 class="h2__header text-white">
                     Recipes</h2>
             </hgroup>
-            <!-- </div> -->
-            <!-- </div> -->
         </section>
 
         <section class="dmenu">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6 order-md-1 order-2" >
                         <div class="row">
                             <div class="col-md-6 col-6">
                                 <img
                                     class="dmenu__img"
-                                    src="https://www.passionforfood.co/wp-content/uploads/2015/02/Food-Photography-1-1024x682.jpg"
-                                    alt="">
+                                    src="./dmenu-1.jpg"
+                                    alt="breakfast platter">
                             </div>
                             <div class="col-md-6 col-6">
                                 <img
                                     class="dmenu__img"
-                                    src="http://geofftelfordfoodphotography.co.uk/wp-content/uploads/2012/09/berts.jpg"
-                                    alt="">
+                                    src="./dmenu2.jpg"
+                                    alt="egg sandwich">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-6 col-6">
                                 <img
                                     class="dmenu__img"
-                                    src="https://themagzone.com/wp-content/uploads/2017/02/o-BEST-FOOD-BLOGGERS-facebook.jpg"
-                                    alt="">
+                                    src="./dmenu-3.jpg"
+                                    alt="sushi">
                             </div>
                             <div class="col-md-6 col-6">
                                 <img
                                     class="dmenu__img"
-                                    src="https://images.onepixel.com/2d02d88a-e52e-3dd7-f380-7f111052fe86_1000.jpg?auto=format&q=80&mark=watermark%2Fcenter-v5.png&markalign=center%2Cmiddle&h=500&w=500&s=10ec43a3fac9fa7cba9ddb8767e63e77"
-                                    alt="">
+                                    src="./dmenu---4.jpg"
+                                    alt="steak">
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 flex-col">
+                    <div class="col-md-6 flex-col order-1 order-md-2">
                         <hgroup>
                             <h1 class="cursive-font discover__header">
                                 <span class="h1__first-letter">D</span>iscover</h1>
@@ -212,22 +198,18 @@
                         <h2 class="h2__header">
                             Delight</h2>
                     </hgroup>
-                    <p>Our baked pastries will have you coming back for more. Enjoy delicious scones or chef inspired desserts any time of the day. It's never too late for pastries.</p>
+                    <p class="culinary__p">Our baked pastries will have you coming back for more. Enjoy delicious scones or chef inspired desserts any time of the day. It's never too late for pastries.</p>
                 </div>
                 <div class="col-md-3 col-6">
-                    <!-- <img class="discover__img" src="http://wholesomepatisserie.com/wp-content/uploads/2017/03/good-morning-breakfast-muffins-quick-easy-delicious-dairy-free-gluten-free-healthy--687x1030.jpg" alt="food"> -->
                     <img
                         class="discover__img"
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTybkVl1_1VxayZ78UzTF-8h40BGs4tt9agmifoifClnzZgK7w_"
+                        src="./delight-1.jpg"
                         alt="food">
                 </div>
                 <div class="col-md-3 col-6">
-                    <!-- https://d104wv11b7o3gc.cloudfront.net/wp-content/uploads/2016/09/maple-walnut-scones-12.jpg -->
-                    <!-- https://s-media-cache-ak0.pinimg.com/originals/84/e1/17/84e117e2a2bdd69c3a957a1be3f50c2d.jpg -->
-                    <!-- <img class="discover__img" src="https://media1.tenor.com/images/57193a2a4fb8f74a49799f7fbe834525/tenor.gif?itemid=12040196" alt="food"> -->
                     <img
                         class="discover__img"
-                        src="https://www.foodfaithfitness.com/wp-content/uploads/2016/05/no-bake-bars-picture.jpg"
+                        src="./delight-2.jpg"
                         alt="food">
                 </div>
             </div>
@@ -237,8 +219,8 @@
             <div class="container">
                 <div class="row mb-5">
                     <div class="col-md-6 offset-md-3">
-                        <h6 class="text-uppercase mb-5">About Rest</h6>
-                        <p class="about__text">RESTE is a family owned breakfast lunch health inspired restaurant located in Bellevue Washington. We use freshly farmed ingredients, along with professional culinary chefs to create unique meals. It has the feel of a bakery, coffee shop and restaurant in a convenient location.</p>
+                        <h6 class="footer__artica text-uppercase mb-5">About Artica</h6>
+                        <p class="about__text">Artica is a family owned brunch and dinner health inspired restaurant located in Bellevue Washington. We use fresh farmed ingredients, along with professional culinary chefs to create unique meals.</p>
                     </div>
                 </div>
                 <div class="row">
@@ -253,7 +235,7 @@
 
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 mb-5">
                         <h6 class="text-uppercase mb-5">Newsletter</h6>
                         <input class="about__input" placeholder="Your email address.."/>
 
@@ -264,7 +246,7 @@
 
         <footer class="footer">
             <div class="blurp--bottom-arrow">
-                <i onclick="scrollTopPage()" class="fas fa-arrow-up uparrow"></i>
+                <i onclick="smoothScroller.scrollUp('nav'); return false;" class="fas fa-arrow-up uparrow"></i>
             </div>
             <svg
                 class="blurp--bottom"
@@ -284,7 +266,7 @@
                     d="M80.3,61.5c0,0,22.1-2.7,43.1-5.4s41-5.4,36.6-5.4c-21.7,0-34.1-12.7-44.9-25.4S95.3,0,80.3,0c-15,0-24.1,12.7-34.9,25.4S22.3,50.8,0.6,50.8c-4.3,0-6.5,0,3.5,1.3S36.2,56.1,80.3,61.5z"></path>
             </svg>
             <div class="copyright-text">
-                © RESTE 2018 &nbsp; • &nbsp;Bellevue WA&nbsp; &nbsp;• &nbsp; Tel: 4251112233
+                © Artica 2018 &nbsp; • &nbsp;Bellevue WA&nbsp;
                 &nbsp; • &nbsp; Handcrafted with love by&nbsp;cfoucht
             </div>
         </footer>
@@ -298,16 +280,16 @@
         <div class="sidemenu">
             <ul class="sidemenu__list">
                 <li class="sidemenu__item">
-                    <a class="sidemenu__link" href="">Home</a>
+                    <a class="sidemenu__link" href="./index.html">Home</a>
                 </li>
                 <li class="sidemenu__item">
-                    <a class="sidemenu__link" href="">Menu</a>
+                    <a class="sidemenu__link" href="./menu.html">Menu</a>
                 </li>
                 <li class="sidemenu__item">
-                    <a class="sidemenu__link" href="">Reservations</a>
+                    <a class="sidemenu__link" href="./reservation.html">Reservations</a>
                 </li>
                 <li class="sidemenu__item">
-                    <a class="sidemenu__link" href="">Contact</a>
+                    <a class="sidemenu__link" href="./contact.html">Contact</a>
                 </li>
             </ul>
             <div class="text-white">

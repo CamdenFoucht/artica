@@ -1,15 +1,14 @@
-body{
-    /* font-family: 'Source Sans Pro', sans-serif; */
-}
-
 .header{
-    background-image: url('https://cdn.demos.pixelgrade.com/wp-content/uploads/sites/5/2014/05/treat-yo-self34836_words_done.jpg');
-    background-image: linear-gradient(to left, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("https://www.londonplanner.com/media/image/onthedak_main_image.jpg");
+    background-image: linear-gradient(to left, rgba(0, 0, 0, .6), rgba(0, 0, 0, .8)), url("./brunch.jpg");
     background-size: cover;
-    height: 400px;
+    height: 50vh;
     width: 100%;
     background-position: center;
     position: relative;
+}
+
+.header--dinner{
+    background-image: linear-gradient(to left, rgba(0, 0, 0, .6), rgba(0, 0, 0, .8)), url("./dinner.jpg");
 }
 
 .header__center{
@@ -23,7 +22,8 @@ body{
     color: #fff;
     text-transform: uppercase;
     font-weight: 900;
-    letter-spacing: .2em;
+    font-size: 64px;
+    letter-spacing: 1px;
 }
 
 .intro{
@@ -37,6 +37,9 @@ body{
 
 .menu__p{
     font-size: 14px;
+    line-height: 1.75;
+    color: #212529;
+    font-weight: bold;
 }
 
 
@@ -47,8 +50,11 @@ body{
     text-transform: uppercase;
     letter-spacing: 3px;
     border-bottom: 3px dashed var(--color-primary);
+    border-bottom: 3px solid #212529;
     padding-bottom: 30px;
     text-align: center;
+    font-weight: 900;
+    color: #212529;
 }
 
 .menu__list{
@@ -70,14 +76,15 @@ body{
     display: inline-block;
     padding-top: 2px;
     padding-right: 5px;
-    font-weight: 600;
+    font-weight: 800;
+    color: #212529;
 }
 
 .item__dots{
     position: absolute;
     top: 17px;
     left: 15px;
-    right: 30px;
+    right: 60px;
     z-index: 1;
     margin: 0;
     border: 0;
@@ -93,22 +100,26 @@ body{
 .item__price{
     position: absolute;
     top: 0;
-    right: 0;
+    right: 30px;
     z-index: 1;
     max-width: 96px;
     background-color: white;
     font-size: 19px;
-    font-size: 1.1875rem;
+    font-size: 1.9rem;
     line-height: 1.27316;
     font-weight: bold;
-    color: var(--color-primary) !important;
+    color: rgb(33, 37, 41);
 }
 
 .item__desc{
     font-size: 14px;
 }
-/* 
-.menu__list-p{
-    font-style: italic;
-    font-size: 18px;
-} */
+
+@media only screen and (max-width: 768px){
+    .header__h1{
+        font-size: 4rem;
+    }
+    .header__center{
+        width: 400px;
+    }
+}

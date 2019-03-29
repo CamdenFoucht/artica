@@ -1,26 +1,54 @@
-body{
-    font-family: 'Source Sans Pro', sans-serif;
-}
-
 .header{
-    background-image: linear-gradient(to left, rgba(0, 0, 0, .6), rgba(0, 0, 0, .7)), url('https://st3.depositphotos.com/12985848/18034/i/1600/depositphotos_180341196-stock-photo-top-view-toasts-fried-eggs.jpg');
-    background-position: cover;
-    height: 300px;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, .8), rgba(0, 0, 0, .7)), url('./bgmain1.jpg');
+    height: 50vh;
     width: 100%;
-    background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
     position: relative;
 }
 
+.header__h1{
+    color: #222;
+    font-size: 4.8rem;
+    font-weight: 900;
+}
+
+.header__h2{
+    color: #222;
+    font-size: 2.8rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
 
 .submit__btn{
+    display: block;
     background-color: #222;
     color: #fff;
     border-radius: 3px;
     border: 1px solid #222;
-    padding: 6px 20px;
-    font-size: 14px;
+    padding: .6rem 2rem;
+    margin-bottom: 4rem;
+    font-size: 1.4rem;
     cursor: pointer;
     text-transform: uppercase;
-    letter-spacing: 2.5px;
+    letter-spacing: .25rem;
+}
+
+.label{
+    font-size: 1.4rem;
+}
+
+.input{
+    padding: 1rem 1.25rem;
+    font-size: 1.4rem;
+    height: calc(3.25rem + 2px);
+}
+
+@media only screen and (max-width: 768px){
+    .header__h1{
+        font-size: 4rem;
+    }
+    .header__center{
+        width: 400px;
+    }
 }
